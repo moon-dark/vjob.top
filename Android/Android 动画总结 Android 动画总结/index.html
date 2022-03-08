@@ -1,0 +1,388 @@
+<!doctype html><html lang=zh class=no-js> <head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><link href=http://vjob.top/Android/Android%20%E5%8A%A8%E7%94%BB%E6%80%BB%E7%BB%93%20Android%20%E5%8A%A8%E7%94%BB%E6%80%BB%E7%BB%93/ rel=canonical><link rel=icon href=../../assets/images/favicon.png><meta name=generator content="mkdocs-1.2.3, mkdocs-material-8.2.1"><title>Android 动画总结 Android 动画总结 - 微站</title><link rel=stylesheet href=../../assets/stylesheets/main.e8d9bf0c.min.css><link rel=stylesheet href=../../assets/stylesheets/palette.e6a45f82.min.css><meta name=theme-color content=#ffffff><link rel=preconnect href=https://fonts.gstatic.com crossorigin><link rel=stylesheet href="https://fonts.googleapis.com/css?family=Noto+Sans:300,400,400i,700%7CSource+Code+Pro&display=fallback"><style>:root{--md-text-font:"Noto Sans";--md-code-font:"Source Code Pro"}</style><script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script></head> <body dir=ltr data-md-color-scheme=preference data-md-color-primary=white data-md-color-accent=red> <input class=md-toggle data-md-toggle=drawer type=checkbox id=__drawer autocomplete=off> <input class=md-toggle data-md-toggle=search type=checkbox id=__search autocomplete=off> <label class=md-overlay for=__drawer></label> <div data-md-component=skip> <a href=#android-android class=md-skip> 跳转至 </a> </div> <div data-md-component=announce> </div> <header class="md-header md-header--lifted" data-md-component=header> <nav class="md-header__inner md-grid" aria-label=页眉> <a href=../.. title=微站 class="md-header__button md-logo" aria-label=微站 data-md-component=logo> <img src=../../static/img/avatar.png alt=logo> </a> <label class="md-header__button md-icon" for=__drawer> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg> </label> <div class=md-header__title data-md-component=header-title> <div class=md-header__ellipsis> <div class=md-header__topic> <span class=md-ellipsis> 微站 </span> </div> <div class=md-header__topic data-md-component=header-topic> <span class=md-ellipsis> Android 动画总结 Android 动画总结 </span> </div> </div> </div> <label class="md-header__button md-icon" for=__search> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg> </label> <div class=md-search data-md-component=search role=dialog> <label class=md-search__overlay for=__search></label> <div class=md-search__inner role=search> <form class=md-search__form name=search> <input type=text class=md-search__input name=query aria-label=搜索 placeholder=搜索 autocapitalize=off autocorrect=off autocomplete=off spellcheck=false data-md-component=search-query required> <label class="md-search__icon md-icon" for=__search> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg> </label> <nav class=md-search__options aria-label=查找> <a href=javascript:void(0) class="md-search__icon md-icon" aria-label=分享 data-clipboard data-clipboard-text data-md-component=search-share tabindex=-1> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08z"/></svg> </a> <button type=reset class="md-search__icon md-icon" aria-label=清空当前内容 tabindex=-1> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg> </button> </nav> <div class=md-search__suggest data-md-component=search-suggest></div> </form> <div class=md-search__output> <div class=md-search__scrollwrap data-md-scrollfix> <div class=md-search-result data-md-component=search-result> <div class=md-search-result__meta> 正在初始化搜索引擎 </div> <ol class=md-search-result__list></ol> </div> </div> </div> </div> </div> </nav> <nav class=md-tabs aria-label=标签 data-md-component=tabs> <div class="md-tabs__inner md-grid"> <ul class=md-tabs__list> <li class=md-tabs__item> <a href=../.. class=md-tabs__link> 主页 </a> </li> <li class=md-tabs__item> <a href=../../RPI/%E6%A0%91%E8%8E%93%E6%B4%BE%E5%AE%89%E8%A3%85Ubuntu%20mate15.10-%E7%B3%BB%E7%BB%9F%E7%AC%94%E8%AE%B0_machh%E7%9A%84%E4%B8%93%E6%A0%8F-CSDN%E5%8D%9A%E5%AE%A2/ class=md-tabs__link> 树莓派 </a> </li> <li class=md-tabs__item> <a href=../Android%E7%B3%BB%E7%BB%9F%E6%9D%83%E9%99%90%E5%92%8Croot%E6%9D%83%E9%99%90/ class="md-tabs__link md-tabs__link--active"> Android </a> </li> <li class=md-tabs__item> <a href=../../Bash/%E5%BA%94%E8%AF%A5%E7%9F%A5%E9%81%93%E7%9A%84Linux%E6%8A%80%E5%B7%A7/ class=md-tabs__link> Bash </a> </li> <li class=md-tabs__item> <a href=../../Python/python%E5%88%B6%E4%BD%9Cpdf%E7%94%B5%E5%AD%90%E4%B9%A6/ class=md-tabs__link> Python </a> </li> <li class=md-tabs__item> <a href=../../%E7%AE%97%E6%B3%95/ class=md-tabs__link> 算法 </a> </li> <li class=md-tabs__item> <a href=../../other/Smashing%20the%20Stack%20for%20Fun%20and%20Profit%20by%20Aleph%20One/ class=md-tabs__link> tmp </a> </li> </ul> </div> </nav> </header> <div class=md-container data-md-component=container> <main class=md-main data-md-component=main> <div class="md-main__inner md-grid"> <div class="md-sidebar md-sidebar--primary" data-md-component=sidebar data-md-type=navigation> <div class=md-sidebar__scrollwrap> <div class=md-sidebar__inner> <nav class="md-nav md-nav--primary md-nav--lifted" aria-label=导航栏 data-md-level=0> <label class=md-nav__title for=__drawer> <a href=../.. title=微站 class="md-nav__button md-logo" aria-label=微站 data-md-component=logo> <img src=../../static/img/avatar.png alt=logo> </a> 微站 </label> <ul class=md-nav__list data-md-scrollfix> <li class="md-nav__item md-nav__item--nested"> <input class="md-nav__toggle md-toggle" data-md-toggle=__nav_1 type=checkbox id=__nav_1> <label class=md-nav__link for=__nav_1> 主页 <span class="md-nav__icon md-icon"></span> </label> <nav class=md-nav aria-label=主页 data-md-level=1> <label class=md-nav__title for=__nav_1> <span class="md-nav__icon md-icon"></span> 主页 </label> <ul class=md-nav__list data-md-scrollfix> <li class=md-nav__item> <a href=../.. class=md-nav__link> 微站 </a> </li> <li class=md-nav__item> <a href=../../RPI/%E6%A0%91%E8%8E%93%E6%B4%BE%E5%AE%89%E8%A3%85Ubuntu%20mate15.10-%E7%B3%BB%E7%BB%9F%E7%AC%94%E8%AE%B0_machh%E7%9A%84%E4%B8%93%E6%A0%8F-CSDN%E5%8D%9A%E5%AE%A2/ class=md-nav__link> 树莓派 </a> </li> <li class=md-nav__item> <a href=../Android%E7%B3%BB%E7%BB%9F%E6%9D%83%E9%99%90%E5%92%8Croot%E6%9D%83%E9%99%90/ class=md-nav__link> Android </a> </li> <li class=md-nav__item> <a href=../../Bash/%E5%BA%94%E8%AF%A5%E7%9F%A5%E9%81%93%E7%9A%84Linux%E6%8A%80%E5%B7%A7/ class=md-nav__link> Bash </a> </li> </ul> </nav> </li> <li class="md-nav__item md-nav__item--nested"> <input class="md-nav__toggle md-toggle" data-md-toggle=__nav_2 type=checkbox id=__nav_2> <label class=md-nav__link for=__nav_2> 树莓派 <span class="md-nav__icon md-icon"></span> </label> <nav class=md-nav aria-label=树莓派 data-md-level=1> <label class=md-nav__title for=__nav_2> <span class="md-nav__icon md-icon"></span> 树莓派 </label> <ul class=md-nav__list data-md-scrollfix> <li class=md-nav__item> <a href=../../RPI/%E6%A0%91%E8%8E%93%E6%B4%BE%E5%AE%89%E8%A3%85Ubuntu%20mate15.10-%E7%B3%BB%E7%BB%9F%E7%AC%94%E8%AE%B0_machh%E7%9A%84%E4%B8%93%E6%A0%8F-CSDN%E5%8D%9A%E5%AE%A2/ class=md-nav__link> 树莓派安装Ubuntu mate15.10 系统笔记 machh的专栏 CSDN博客 </a> </li> <li class=md-nav__item> <a href=../../RPI/%E5%B0%86%E6%A0%91%E8%8E%93%E6%B4%BERaspberry%20Pi%E8%AE%BE%E7%BD%AE%E4%B8%BA%E6%97%A0%E7%BA%BF%E8%B7%AF%E7%94%B1%E5%99%A8%28WiFi%E7%83%AD%E7%82%B9AP%2CRTL8188CUS%E8%8A%AF%E7%89%87%29/ class=md-nav__link> 将树莓派Raspberry Pi设置为无线路由器(WiFi热点AP,RTL8188CUS芯片) </a> </li> <li class=md-nav__item> <a href=../../RPI/Using%20Raspberry%20Pi%20for%20Laravel%20developing/ class=md-nav__link> Using Raspberry Pi for Laravel developing </a> </li> <li class=md-nav__item> <a href=../../RPI/VNC%20setup%20on%20Raspberry%20Pi%20from%20Ubuntu/ class=md-nav__link> VNC setup on Raspberry Pi from Ubuntu </a> </li> <li class=md-nav__item> <a href=../../RPI/%E8%AE%BE%E7%BD%AE%E6%A0%91%E8%8E%93%E6%B4%BE%E4%BD%BF%E7%94%A8%E5%A4%96%E7%BD%AE%E7%A1%AC%E7%9B%98%E5%90%AF%E5%8A%A8/ class=md-nav__link> 设置树莓派使用外置硬盘启动 </a> </li> <li class=md-nav__item> <a href=../../RPI/%E6%8A%8A%E6%A0%91%E8%8E%93%E6%B4%BE%E5%8F%98%E6%88%9024%E5%B0%8F%E6%97%B6%E8%BF%90%E8%A1%8C%E7%9A%84%E4%B8%8B%E8%BD%BD%E7%A5%9E%E5%99%A8%EF%BC%88%E7%A7%8D%E5%AD%90%E3%80%81%E7%A3%81%E5%8A%9B%E9%93%BE%E9%80%9A%E9%80%9A%E6%94%AF%E6%8C%81%EF%BC%89/ class=md-nav__link> 把树莓派变成24小时运行的下载神器（种子、磁力链通通支持） </a> </li> <li class=md-nav__item> <a href=../../RPI/%E5%9C%A8%E6%A0%91%E8%8E%93%E6%B4%BE2%E4%B8%8A%E5%AE%89%E8%A3%85%20Chromium%20%E6%B5%8F%E8%A7%88%E5%99%A8%E5%8F%8A%20Google%20%E6%8B%BC%E9%9F%B3%E8%BE%93%E5%85%A5%E6%B3%95/ class=md-nav__link> 在树莓派2上安装 Chromium 浏览器及 Google 拼音输入法 </a> </li> <li class=md-nav__item> <a href=../../RPI/%E4%B8%BA%E6%A0%91%E8%8E%93%E6%B4%BEDIY%E4%B8%80%E6%AC%BE%E9%AB%98%E9%80%9F%E7%A8%B3%E5%AE%9A%E7%9A%84%E6%97%A0%E7%BA%BF%E7%BD%91%E5%8D%A1/ class=md-nav__link> 为树莓派DIY一款高速稳定的无线网卡 </a> </li> <li class=md-nav__item> <a href=../../RPI/%E6%A0%91%E8%8E%93%E6%B4%BE%E5%BC%80%E5%8F%91%E7%B3%BB%E5%88%97%E6%95%99%E7%A8%8B6%E2%80%94%E2%80%94%E6%A0%91%E8%8E%93%E6%B4%BE%E5%81%9Awifi%E7%83%AD%E7%82%B9_%E8%80%81%E5%BE%902014-CSDN%E5%8D%9A%E5%AE%A2_%E6%A0%91%E8%8E%93%E6%B4%BE%E5%81%9Awifi%E7%83%AD%E7%82%B9/ class=md-nav__link> 树莓派开发系列教程6——树莓派做wifi热点 老徐2014 CSDN博客 树莓派做wifi热点 </a> </li> <li class=md-nav__item> <a href=../../RPI/%E6%A0%91%E8%8E%93%E6%B4%BEwifi%E7%A0%B4%E8%A7%A3%E6%95%B4%E7%90%86%20-%20FindHao/ class=md-nav__link> 树莓派wifi破解整理 FindHao </a> </li> <li class=md-nav__item> <a href=../../RPI/%E6%A0%91%E8%8E%93%E6%B4%BE%E9%A6%99%E6%A9%99%E6%B4%BE%E6%97%A0%E7%BA%BF%E6%92%AD%E6%94%BE%EF%BC%8C%E5%AE%9E%E7%8E%B0DLNA%E4%B8%8EAirPlay%E5%8D%8F%E8%AE%AE%E6%97%A0%E7%BA%BF%E9%9F%B3%E7%AE%B1/ class=md-nav__link> 树莓派香橙派无线播放，实现DLNA与AirPlay协议无线音箱 </a> </li> <li class=md-nav__item> <a href=../../RPI/SSH%E9%80%9A%E8%BF%87%E4%BB%A3%E7%90%86%E8%BF%9E%E6%8E%A5/ class=md-nav__link> SSH通过代理连接 </a> </li> <li class=md-nav__item> <a href=../../RPI/Autossh%20and%20Systemd%20Service/ class=md-nav__link> Autossh and Systemd Service </a> </li> <li class=md-nav__item> <a href=../../RPI/Copying%20MySQL%20Databases%20to%20Another%20Machine/ class=md-nav__link> Copying MySQL Databases to Another Machine </a> </li> <li class=md-nav__item> <a href=../../RPI/How%20To%20Move%20a%20MySQL%20Data%20Directory%20to%20a%20New%20Location%20on%20Ubuntu%2016.04/ class=md-nav__link> How To Move a MySQL Data Directory to a New Location on Ubuntu 16.04 </a> </li> <li class=md-nav__item> <a href=../../RPI/Latest%20Version%20of%20Firefox%20and%20Thunderbird%20on%20a%20Raspberry%20Pi%20%5Bobsolete%5D/ class=md-nav__link> Latest Version of Firefox and Thunderbird on a Raspberry Pi [obsolete] </a> </li> <li class=md-nav__item> <a href=../../RPI/OpenWrt%20%E4%BD%BF%E7%94%A8%20frp%20%E5%AE%9E%E7%8E%B0%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F%20%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C%20%E6%90%AD%E5%BB%BA%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F%20%E6%96%87%E7%AB%A0%E8%AF%84%E8%AE%BA/ class=md-nav__link> OpenWrt 使用 frp 实现内网穿透 准备工作 搭建内网穿透 文章评论 </a> </li> <li class=md-nav__item> <a href=../../RPI/%E8%A7%A3%E5%86%B3%E6%A0%91%E8%8E%93%E6%B4%BESSH%E7%99%BB%E5%BD%95%E7%BC%93%E6%85%A2%E7%9A%84%E9%97%AE%E9%A2%98_Maoning%20Guan%E7%9A%84%E5%8D%9A%E5%AE%A2-CSDN%E5%8D%9A%E5%AE%A2/ class=md-nav__link> 解决树莓派SSH登录缓慢的问题 Maoning Guan的博客 CSDN博客 </a> </li> <li class=md-nav__item> <a href=../../RPI/Reading%20privileged%20memory%20with%20a%20side-channel/ class=md-nav__link> Reading privileged memory with a side channel </a> </li> <li class=md-nav__item> <a href=../../RPI/Install%20Latest%20ReadyMedia%20miniDLNA%20Raspberry%20Pi/ class=md-nav__link> Install Latest ReadyMedia miniDLNA Raspberry Pi </a> </li> <li class=md-nav__item> <a href=../../RPI/%E4%BD%BF%E7%94%A8%20vcgencmd%20%E6%8C%87%E4%BB%A4%E6%9F%A5%E7%9C%8B%20Raspberry%20Pi%20%E7%9A%84%20CPU%20%E6%BA%AB%E5%BA%A6%E3%80%81%E9%81%8B%E8%A1%8C%E9%80%9F%E5%BA%A6%E8%88%87%E9%9B%BB%E5%A3%93%E7%AD%89%E8%B3%87%E8%A8%8A/ class=md-nav__link> 使用 vcgencmd 指令查看 Raspberry Pi 的 CPU 溫度、運行速度與電壓等資訊 </a> </li> <li class=md-nav__item> <a href=../../RPI/Aria2%20%E7%BC%96%E8%AF%91%20%E6%B7%BB%E5%8A%A0%E6%94%AF%E6%8C%81BT%E4%B8%8B%E8%BD%BD%E7%9A%84%E5%8A%9F%E8%83%BD%EF%BC%88X86%E5%92%8Carmhf%E7%9A%84%E6%A0%91%E8%8E%93%E6%B4%BE2%EF%BC%89/ class=md-nav__link> Aria2 编译 添加支持BT下载的功能（X86和armhf的树莓派2） </a> </li> <li class=md-nav__item> <a href=../../RPI/Let%27s%20Encrypt%EF%BC%8C%E5%85%8D%E8%B4%B9%E5%A5%BD%E7%94%A8%E7%9A%84%20HTTPS%20%E8%AF%81%E4%B9%A6/ class=md-nav__link> Let's Encrypt，免费好用的 HTTPS 证书 </a> </li> <li class=md-nav__item> <a href=../../RPI/%E4%BD%BF%E7%94%A8SSH%E5%8F%8D%E5%90%91%E9%9A%A7%E9%81%93%E8%BF%9B%E8%A1%8C%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/ class=md-nav__link> 使用SSH反向隧道进行内网穿透 </a> </li> <li class=md-nav__item> <a href=../../RPI/%E6%A0%91%E8%8E%93%E6%B4%BE%E5%88%A9%E7%94%A8nginx%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86%EF%BC%8C%E6%88%90%E4%B8%BAIPv6_IPv4%E5%85%AC%E7%BD%91%E6%9C%8D%E5%8A%A1%E5%99%A8%EF%BC%88%E9%9C%80%E8%A6%81%E8%BF%9C%E7%A8%8B%E5%8F%8C%E6%A0%88%E6%9C%8D%E5%8A%A1%E5%99%A8%EF%BC%89/ class=md-nav__link> 树莓派利用nginx反向代理，成为IPv6 IPv4公网服务器（需要远程双栈服务器） </a> </li> </ul> </nav> </li> <li class="md-nav__item md-nav__item--active md-nav__item--nested"> <input class="md-nav__toggle md-toggle" data-md-toggle=__nav_3 type=checkbox id=__nav_3 checked> <label class=md-nav__link for=__nav_3> Android <span class="md-nav__icon md-icon"></span> </label> <nav class=md-nav aria-label=Android data-md-level=1> <label class=md-nav__title for=__nav_3> <span class="md-nav__icon md-icon"></span> Android </label> <ul class=md-nav__list data-md-scrollfix> <li class=md-nav__item> <a href=../Android%E7%B3%BB%E7%BB%9F%E6%9D%83%E9%99%90%E5%92%8Croot%E6%9D%83%E9%99%90/ class=md-nav__link> Android系统权限和root权限 </a> </li> <li class=md-nav__item> <a href=../%E3%80%90Android%20ROM%E5%AE%9A%E5%88%B6%E3%80%91CyanogenMod%E6%BA%90%E7%A0%81%E4%B8%8B%E8%BD%BD%E5%92%8C%E7%BC%96%E8%AF%91/ class=md-nav__link> 【Android ROM定制】CyanogenMod源码下载和编译 </a> </li> <li class=md-nav__item> <a href=../android%E5%86%85%E5%AD%98%E6%B3%84%E9%9C%B2%E4%BC%98%E5%8C%96%E6%80%BB%E7%BB%93/ class=md-nav__link> Android内存泄露优化总结 </a> </li> <li class=md-nav__item> <a href=../%E6%97%A5%E7%A7%AF%E6%9C%88%E7%B4%AF%EF%BC%9AProguard%E8%BF%9B%E8%A1%8C%E6%BA%90%E4%BB%A3%E7%A0%81%E6%B7%B7%E6%B7%86%E5%92%8C%E5%B4%A9%E6%BA%83%E6%97%A5%E5%BF%97%E5%8F%8D%E6%B7%B7%E6%B7%86/ class=md-nav__link> 日积月累：Proguard进行源代码混淆和崩溃日志反混淆 </a> </li> <li class=md-nav__item> <a href=../10%20Ways%20to%20Improve%20Your%20Android%20App%27s%20Performance/ class=md-nav__link> 10 Ways to Improve Your Android App's Performance </a> </li> <li class=md-nav__item> <a href=../Anatomy%20of%20RecyclerView%3Aa%20Search%20for%20a%20ViewHolder/ class=md-nav__link> Anatomy of RecyclerView:a Search for a ViewHolder </a> </li> <li class=md-nav__item> <a href=../Android%E6%8F%92%E4%BB%B6%E5%8C%96%E5%8E%9F%E7%90%86%E8%A7%A3%E6%9E%90%E2%80%94%E2%80%94Hook%E6%9C%BA%E5%88%B6%E4%B9%8BBinder%20Hook/ class=md-nav__link> Android插件化原理解析——Hook机制之Binder Hook </a> </li> <li class=md-nav__item> <a href=../%E6%89%8B%E6%8A%8A%E6%89%8B%E6%95%99%E4%BD%A0%E5%BD%93%E5%BE%AE%E4%BF%A1%E8%BF%90%E5%8A%A8%E7%AC%AC%E4%B8%80%E5%90%8D%E2%80%93%E5%88%A9%E7%94%A8AndroidHook%E8%BF%9B%E8%A1%8C%E5%BE%AE%E4%BF%A1%E8%BF%90%E5%8A%A8%E4%BD%9C%E5%BC%8A/ class=md-nav__link> 手把手教你当微信运动第一名–利用AndroidHook进行微信运动作弊 </a> </li> <li class=md-nav__item> <a href=../%E9%BB%91%E5%AE%A2%E5%8F%AF%E4%BB%A5%E5%88%A9%E7%94%A8%E4%B8%89%E6%98%9F%E9%A2%84%E8%A3%85%E7%9A%84%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E6%9D%A5%E7%9B%91%E8%A7%86%E7%94%A8%E6%88%B7/ class=md-nav__link> 黑客可以利用三星预装的应用程序来监视用户 </a> </li> <li class="md-nav__item md-nav__item--active"> <input class="md-nav__toggle md-toggle" data-md-toggle=toc type=checkbox id=__toc> <label class="md-nav__link md-nav__link--active" for=__toc> Android 动画总结 Android 动画总结 <span class="md-nav__icon md-icon"></span> </label> <a href=./ class="md-nav__link md-nav__link--active"> Android 动画总结 Android 动画总结 </a> <nav class="md-nav md-nav--secondary" aria-label=目录> <label class=md-nav__title for=__toc> <span class="md-nav__icon md-icon"></span> 目录 </label> <ul class=md-nav__list data-md-component=toc data-md-scrollfix> <li class=md-nav__item> <a href=#android-android class=md-nav__link> Android 动画总结 Android 动画总结 </a> </li> <li class=md-nav__item> <a href=#android class=md-nav__link> Android 动画分类 </a> </li> <li class=md-nav__item> <a href=#_1 class=md-nav__link> 传统动画 </a> <nav class=md-nav aria-label=传统动画> <ul class=md-nav__list> <li class=md-nav__item> <a href=#_2 class=md-nav__link> 帧动画 </a> </li> <li class=md-nav__item> <a href=#_3 class=md-nav__link> 补间动画 </a> <nav class=md-nav aria-label=补间动画> <ul class=md-nav__list> <li class=md-nav__item> <a href=#xml class=md-nav__link> XML 实现 </a> </li> <li class=md-nav__item> <a href=#java class=md-nav__link> Java 直接实现 </a> </li> </ul> </nav> </li> </ul> </nav> </li> <li class=md-nav__item> <a href=#_4 class=md-nav__link> 属性动画 </a> <nav class=md-nav aria-label=属性动画> <ul class=md-nav__list> <li class=md-nav__item> <a href=#_5 class=md-nav__link> 属性动画入门 </a> </li> <li class=md-nav__item> <a href=#_6 class=md-nav__link> 属性动画核心原理 </a> </li> <li class=md-nav__item> <a href=#_7 class=md-nav__link> 属性动画自定义实现 </a> <nav class=md-nav aria-label=属性动画自定义实现> <ul class=md-nav__list> <li class=md-nav__item> <a href=#typeevaluator class=md-nav__link> 用TypeEvaluator 确定运动轨迹 </a> </li> <li class=md-nav__item> <a href=#_8 class=md-nav__link> 颜色及半径动画实现 </a> </li> <li class=md-nav__item> <a href=#timeinterpolator class=md-nav__link> TimeInterpolator 介绍 </a> </li> <li class=md-nav__item> <a href=#xml_1 class=md-nav__link> XML 属性动画 </a> </li> </ul> </nav> </li> </ul> </nav> </li> <li class=md-nav__item> <a href=#vs class=md-nav__link> 传统动画 VS 属性动画 </a> </li> </ul> </nav> </li> <li class=md-nav__item> <a href=../Android%E7%AD%BE%E5%90%8D%E6%80%BB%E7%BB%93/ class=md-nav__link> Android签名总结 </a> </li> <li class=md-nav__item> <a href=../Am%E5%91%BD%E4%BB%A4%E7%94%A8%E6%B3%95/ class=md-nav__link> Am命令用法 </a> </li> <li class=md-nav__item> <a href=../10%20Tips%20for%20using%20the%20Eclipse%20Memory%20Analyzer/ class=md-nav__link> 10 Tips for using the Eclipse Memory Analyzer </a> </li> <li class=md-nav__item> <a href=../android%E4%BD%BF%E7%94%A8ndk-stack%E8%B0%83%E8%AF%95JNI%E9%83%A8%E5%88%86%E7%9A%84C_C%2B%2B%E4%BB%A3%E7%A0%81/ class=md-nav__link> android使用ndk stack调试JNI部分的C C++代码 </a> </li> <li class=md-nav__item> <a href=../NativeActivity%E5%8E%9F%E7%90%86/ class=md-nav__link> NativeActivity原理 </a> </li> <li class=md-nav__item> <a href=../Using%20data%20binding%20in%20Android/ class=md-nav__link> Using data binding in Android </a> </li> <li class=md-nav__item> <a href=../Android%E4%B8%8AWebRTC%E4%BB%8B%E7%BB%8D/ class=md-nav__link> Android上WebRTC介绍 </a> </li> <li class=md-nav__item> <a href=../CoordinatorLayout%E9%AB%98%E7%BA%A7%E7%94%A8%E6%B3%95-%E8%87%AA%E5%AE%9A%E4%B9%89Behavior/ class=md-nav__link> CoordinatorLayout高级用法 自定义Behavior </a> </li> <li class=md-nav__item> <a href=../OpenSSL%E5%AE%9E%E8%B7%B5-Android%E4%B8%8B%E7%9A%84%E7%BC%96%E8%AF%91%E5%92%8C%E4%BD%BF%E7%94%A8/ class=md-nav__link> OpenSSL实践 Android下的编译和使用 </a> </li> <li class=md-nav__item> <a href=../%E4%BD%BF%E7%94%A8ShareSDK%E5%AE%8C%E6%88%90%E7%AC%AC%E4%B8%89%E6%96%B9%EF%BC%88QQ%E3%80%81%E5%BE%AE%E4%BF%A1%E3%80%81%E5%BE%AE%E5%8D%9A%EF%BC%89%E7%99%BB%E5%BD%95%E5%92%8C%E5%88%86%E4%BA%AB/ class=md-nav__link> 使用ShareSDK完成第三方（QQ、微信、微博）登录和分享 </a> </li> </ul> </nav> </li> <li class="md-nav__item md-nav__item--nested"> <input class="md-nav__toggle md-toggle" data-md-toggle=__nav_4 type=checkbox id=__nav_4> <label class=md-nav__link for=__nav_4> Bash <span class="md-nav__icon md-icon"></span> </label> <nav class=md-nav aria-label=Bash data-md-level=1> <label class=md-nav__title for=__nav_4> <span class="md-nav__icon md-icon"></span> Bash </label> <ul class=md-nav__list data-md-scrollfix> <li class=md-nav__item> <a href=../../Bash/%E5%BA%94%E8%AF%A5%E7%9F%A5%E9%81%93%E7%9A%84Linux%E6%8A%80%E5%B7%A7/ class=md-nav__link> 应该知道的Linux技巧 </a> </li> <li class=md-nav__item> <a href=../../Bash/%E4%BC%98%E9%9B%85%E5%9C%B0%E4%BD%BF%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C%EF%BC%9ATmux%20%E7%BB%88%E7%AB%AF%E5%A4%8D%E7%94%A8/ class=md-nav__link> 优雅地使用命令行：Tmux 终端复用 </a> </li> <li class=md-nav__item> <a href=../../Bash/%E6%88%91%E7%9A%84ImageMagick%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/ class=md-nav__link> 我的ImageMagick使用心得 </a> </li> <li class=md-nav__item> <a href=../../Bash/gdbcomm/ class=md-nav__link> Gdbcomm </a> </li> </ul> </nav> </li> <li class="md-nav__item md-nav__item--nested"> <input class="md-nav__toggle md-toggle" data-md-toggle=__nav_5 type=checkbox id=__nav_5> <label class=md-nav__link for=__nav_5> Python <span class="md-nav__icon md-icon"></span> </label> <nav class=md-nav aria-label=Python data-md-level=1> <label class=md-nav__title for=__nav_5> <span class="md-nav__icon md-icon"></span> Python </label> <ul class=md-nav__list data-md-scrollfix> <li class=md-nav__item> <a href=../../Python/python%E5%88%B6%E4%BD%9Cpdf%E7%94%B5%E5%AD%90%E4%B9%A6/ class=md-nav__link> Python制作pdf电子书 </a> </li> </ul> </nav> </li> <li class=md-nav__item> <a href=../../%E7%AE%97%E6%B3%95/ class=md-nav__link> 算法 </a> </li> <li class="md-nav__item md-nav__item--nested"> <input class="md-nav__toggle md-toggle" data-md-toggle=__nav_7 type=checkbox id=__nav_7> <label class=md-nav__link for=__nav_7> tmp <span class="md-nav__icon md-icon"></span> </label> <nav class=md-nav aria-label=tmp data-md-level=1> <label class=md-nav__title for=__nav_7> <span class="md-nav__icon md-icon"></span> tmp </label> <ul class=md-nav__list data-md-scrollfix> <li class=md-nav__item> <a href=../../other/Smashing%20the%20Stack%20for%20Fun%20and%20Profit%20by%20Aleph%20One/ class=md-nav__link> Smashing the Stack for Fun and Profit by Aleph One </a> </li> <li class=md-nav__item> <a href=../../other/TOP%2011%20Deep%20Web%20Search%20Engine%20Alternative%20for%20Google%20and%20Bing%202021/ class=md-nav__link> TOP 11 Deep Web Search Engine Alternative for Google and Bing 2021 </a> </li> <li class=md-nav__item> <a href=../../other/FFmpeg%E5%8A%9F%E8%83%BD%E5%91%BD%E4%BB%A4%E6%B1%87%E6%80%BB/ class=md-nav__link> FFmpeg功能命令汇总 </a> </li> </ul> </nav> </li> </ul> </nav> </div> </div> </div> <div class="md-sidebar md-sidebar--secondary" data-md-component=sidebar data-md-type=toc> <div class=md-sidebar__scrollwrap> <div class=md-sidebar__inner> <nav class="md-nav md-nav--secondary" aria-label=目录> <label class=md-nav__title for=__toc> <span class="md-nav__icon md-icon"></span> 目录 </label> <ul class=md-nav__list data-md-component=toc data-md-scrollfix> <li class=md-nav__item> <a href=#android-android class=md-nav__link> Android 动画总结 Android 动画总结 </a> </li> <li class=md-nav__item> <a href=#android class=md-nav__link> Android 动画分类 </a> </li> <li class=md-nav__item> <a href=#_1 class=md-nav__link> 传统动画 </a> <nav class=md-nav aria-label=传统动画> <ul class=md-nav__list> <li class=md-nav__item> <a href=#_2 class=md-nav__link> 帧动画 </a> </li> <li class=md-nav__item> <a href=#_3 class=md-nav__link> 补间动画 </a> <nav class=md-nav aria-label=补间动画> <ul class=md-nav__list> <li class=md-nav__item> <a href=#xml class=md-nav__link> XML 实现 </a> </li> <li class=md-nav__item> <a href=#java class=md-nav__link> Java 直接实现 </a> </li> </ul> </nav> </li> </ul> </nav> </li> <li class=md-nav__item> <a href=#_4 class=md-nav__link> 属性动画 </a> <nav class=md-nav aria-label=属性动画> <ul class=md-nav__list> <li class=md-nav__item> <a href=#_5 class=md-nav__link> 属性动画入门 </a> </li> <li class=md-nav__item> <a href=#_6 class=md-nav__link> 属性动画核心原理 </a> </li> <li class=md-nav__item> <a href=#_7 class=md-nav__link> 属性动画自定义实现 </a> <nav class=md-nav aria-label=属性动画自定义实现> <ul class=md-nav__list> <li class=md-nav__item> <a href=#typeevaluator class=md-nav__link> 用TypeEvaluator 确定运动轨迹 </a> </li> <li class=md-nav__item> <a href=#_8 class=md-nav__link> 颜色及半径动画实现 </a> </li> <li class=md-nav__item> <a href=#timeinterpolator class=md-nav__link> TimeInterpolator 介绍 </a> </li> <li class=md-nav__item> <a href=#xml_1 class=md-nav__link> XML 属性动画 </a> </li> </ul> </nav> </li> </ul> </nav> </li> <li class=md-nav__item> <a href=#vs class=md-nav__link> 传统动画 VS 属性动画 </a> </li> </ul> </nav> </div> </div> </div> <div class=md-content data-md-component=content> <article class="md-content__inner md-typeset"> <h1>Android 动画总结 Android 动画总结</h1> <h2 id=android-android>Android 动画总结 Android 动画总结</h2> <p>在日常的Android开发中，经常会使用到动画，这里就对Android开发中的动画做一下总结。</p> <h2 id=android>Android 动画分类</h2> <p>总的来说，Android动画可以分为两类，最初的<strong>传统动画</strong>和Android3.0 之后出现的<strong>属性动画</strong>； </p> <p>传统动画又包括 帧动画（Frame Animation）和补间动画（Tweened Animation）。</p> <h2 id=_1>传统动画</h2> <h3 id=_2>帧动画</h3> <p>帧动画是最容易实现的一种动画，这种动画更多的依赖于完善的UI资源，他的原理就是将一张张单独的图片连贯的进行播放， </p> <p>从而在视觉上产生一种动画的效果；有点类似于某些软件制作gif动画的方式。</p> <p><img alt src></p> <p>frame.gif</p> <p>如上图中的京东加载动画，代码要做的事情就是把一幅幅的图片按顺序显示，造成动画的视觉效果。</p> <p><strong>京东动画实现</strong></p> <pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;animation-list xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;&gt;
+    &lt;item
+        android:drawable=&quot;@drawable/a_0&quot;
+        android:duration=&quot;100&quot; /&gt;
+    &lt;item
+        android:drawable=&quot;@drawable/a_1&quot;
+        android:duration=&quot;100&quot; /&gt;
+    &lt;item
+        android:drawable=&quot;@drawable/a_2&quot;
+        android:duration=&quot;100&quot; /&gt;
+&lt;/animation-list&gt;
+
+</code></pre> <pre><code>protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_frame_animation);
+        ImageView animationImg1 = (ImageView) findViewById(R.id.animation1);
+        animationImg1.setImageResource(R.drawable.frame_anim1);
+        AnimationDrawable animationDrawable1 = (AnimationDrawable) animationImg1.getDrawable();
+        animationDrawable1.start();
+    }
+
+</code></pre> <p><em>可以说，图片资源决定了这种方式可以实现怎样的动画</em></p> <p><em>在有些代码中，我们还会看到android：oneshot="false" ，这个oneshot 的含义就是动画执行一次（true）还是循环执行多次。</em></p> <p>这里其他几个动画实现方式都是一样，无非就是图片资源的差异。</p> <h3 id=_3>补间动画</h3> <p>补间动画又可以分为四种形式，分别是 <strong>alpha（淡入淡出），translate（位移），scale（缩放大小），rotate（旋转）</strong>。 </p> <p>补间动画的实现，一般会采用xml 文件的形式；代码会更容易书写和阅读，同时也更容易复用。</p> <h4 id=xml>XML 实现</h4> <p>首先，在res/anim/ 文件夹下定义如下的动画实现方式</p> <p><strong>alpha_anim.xml 动画实现</strong></p> <pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;alpha xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
+    android:duration=&quot;1000&quot;
+    android:fromAlpha=&quot;1.0&quot;
+    android:interpolator=&quot;@android:anim/accelerate_decelerate_interpolator&quot;
+    android:toAlpha=&quot;0.0&quot; /&gt;
+
+</code></pre> <p><strong>scale.xml 动画实现</strong></p> <pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;scale xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
+    android:duration=&quot;1000&quot;
+    android:fromXScale=&quot;0.0&quot;
+    android:fromYScale=&quot;0.0&quot;
+    android:pivotX=&quot;50%&quot;
+    android:pivotY=&quot;50%&quot;
+    android:toXScale=&quot;1.0&quot;
+    android:toYScale=&quot;1.0&quot;/&gt;
+
+</code></pre> <p>然后，在Activity中</p> <pre><code>Animation animation = AnimationUtils.loadAnimation(mContext, R.anim.alpha_anim);
+img = (ImageView) findViewById(R.id.img);
+img.startAnimation(animation);
+
+</code></pre> <p>这样就可以实现ImageView alpha 透明变化的动画效果。</p> <p>也可以使用set 标签将多个动画组合（代码源自Android SDK API）</p> <pre><code>&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;set xmlns:android=&quot;http://schemas.android.com/apk/res/android&quot;
+    android:interpolator=&quot;@[package:]anim/interpolator_resource&quot;
+    android:shareInterpolator=[&quot;true&quot; | &quot;false&quot;] &gt;
+    &lt;alpha
+        android:fromAlpha=&quot;float&quot;
+        android:toAlpha=&quot;float&quot; /&gt;
+    &lt;scale
+        android:fromXScale=&quot;float&quot;
+        android:toXScale=&quot;float&quot;
+        android:fromYScale=&quot;float&quot;
+        android:toYScale=&quot;float&quot;
+        android:pivotX=&quot;float&quot;
+        android:pivotY=&quot;float&quot; /&gt;
+    &lt;translate
+        android:fromXDelta=&quot;float&quot;
+        android:toXDelta=&quot;float&quot;
+        android:fromYDelta=&quot;float&quot;
+        android:toYDelta=&quot;float&quot; /&gt;
+    &lt;rotate
+        android:fromDegrees=&quot;float&quot;
+        android:toDegrees=&quot;float&quot;
+        android:pivotX=&quot;float&quot;
+        android:pivotY=&quot;float&quot; /&gt;
+    &lt;set&gt;
+        ...
+    &lt;/set&gt;
+&lt;/set&gt;
+
+</code></pre> <p>可以看到组合动画是可以嵌套使用的。</p> <p>各个动画属性的含义结合动画自身的特点应该很好理解，就不一一阐述了；这里主要说一下<strong>interpolator</strong> 和 <strong>pivot</strong>。</p> <blockquote> <p>Interpolator 主要作用是可以控制动画的变化速率 ，就是动画进行的快慢节奏。</p> </blockquote> <p>Android 系统已经为我们提供了一些Interpolator ，比如 accelerate_decelerate_interpolator，accelerate_interpolator等。更多的interpolator 及其含义可以在Android SDK 中查看。同时这个Interpolator也是可以自定义的，这个后面还会提到。</p> <blockquote> <p>pivot 决定了当前动画执行的参考位置</p> </blockquote> <p>pivot 这个属性主要是在translate 和 scale 动画中，这两种动画都牵扯到view 的“物理位置“发生变化，所以需要一个参考点。而pivotX和pivotY就共同决定了这个点；它的值可以是float或者是百分比数值。</p> <p>我们以pivotX为例，</p> <table> <thead> <tr> <th>pivotX取值</th> <th>含义</th> </tr> </thead> <tbody> <tr> <td>10</td> <td>距离动画所在view自身左边缘10像素</td> </tr> <tr> <td>10%</td> <td>距离动画所在view自身左边缘 的距离是整个view宽度的10%</td> </tr> <tr> <td>10%p</td> <td>距离动画所在view父控件左边缘的距离是整个view宽度的10%</td> </tr> </tbody> </table> <p>pivotY 也是相同的原理，只不过变成的纵向的位置。如果还是不明白可以参考<a href=https://github.com/REBOOTERS/AndroidAnimationExercise>源码</a>，在Tweened Animation中结合seekbar的滑动观察rotate的变化理解。</p> <p><img alt src></p> <p>rotate1.gif</p> <h4 id=java>Java 直接实现</h4> <p>有时候，动画的属性值可能需要动态的调整，这个时候使用xml 就不合适了，需要使用java代码实现</p> <pre><code>private void RotateAnimation() {
+        animation = new RotateAnimation(-deValue, deValue, Animation.RELATIVE_TO_SELF,
+                pxValue, Animation.RELATIVE_TO_SELF, pyValue);
+        animation.setDuration(timeValue);
+
+        if (keep.isChecked()) {
+            animation.setFillAfter(true);
+        } else {
+            animation.setFillAfter(false);
+        }
+        if (loop.isChecked()) {
+            animation.setRepeatCount(-1);
+        } else {
+            animation.setRepeatCount(0);
+        }
+
+        if (reverse.isChecked()) {
+            animation.setRepeatMode(Animation.REVERSE);
+        } else {
+            animation.setRepeatMode(Animation.RESTART);
+        }
+        img.startAnimation(animation);
+    }
+
+</code></pre> <p><strong>这里animation.setFillAfter决定了动画在播放结束时是否保持最终的状态；animation.setRepeatCount和animation.setRepeatMode 决定了动画的重复次数及重复方式，具体细节可查看源码理解。</strong></p> <p>好了，传统动画的内容就说到这里了。</p> <h2 id=_4>属性动画</h2> <p>属性动画，顾名思义它是对于对象属性的动画。因此，所有补间动画的内容，都可以通过属性动画实现。</p> <h3 id=_5>属性动画入门</h3> <p>首先我们来看看如何用属性动画实现上面补间动画的效果</p> <pre><code>    private void RotateAnimation() {
+        ObjectAnimator anim = ObjectAnimator.ofFloat(myView, &quot;rotation&quot;, 0f, 360f);
+        anim.setDuration(1000);
+        anim.start();
+    }
+
+    private void AlpahAnimation() {
+        ObjectAnimator anim = ObjectAnimator.ofFloat(myView, &quot;alpha&quot;, 1.0f, 0.8f, 0.6f, 0.4f, 0.2f, 0.0f);
+        anim.setRepeatCount(-1);
+        anim.setRepeatMode(ObjectAnimator.REVERSE);
+        anim.setDuration(2000);
+        anim.start();
+    }
+
+</code></pre> <p>这两个方法用属性动画的方式分别实现了旋转动画和淡入淡出动画，其中setDuration、setRepeatMode及setRepeatCount和补间动画中的概念是一样的。</p> <p>可以看到，属性动画貌似强大了许多，实现很方便，同时动画可变化的值也有了更多的选择，动画所能呈现的细节也更多。</p> <p>当然属性动画也是可以组合实现的</p> <pre><code>                ObjectAnimator alphaAnim = ObjectAnimator.ofFloat(myView, &quot;alpha&quot;, 1.0f, 0.5f, 0.8f, 1.0f);
+                ObjectAnimator scaleXAnim = ObjectAnimator.ofFloat(myView, &quot;scaleX&quot;, 0.0f, 1.0f);
+                ObjectAnimator scaleYAnim = ObjectAnimator.ofFloat(myView, &quot;scaleY&quot;, 0.0f, 2.0f);
+                ObjectAnimator rotateAnim = ObjectAnimator.ofFloat(myView, &quot;rotation&quot;, 0, 360);
+                ObjectAnimator transXAnim = ObjectAnimator.ofFloat(myView, &quot;translationX&quot;, 100, 400);
+                ObjectAnimator transYAnim = ObjectAnimator.ofFloat(myView, &quot;tranlsationY&quot;, 100, 750);
+                AnimatorSet set = new AnimatorSet();
+                set.playTogether(alphaAnim, scaleXAnim, scaleYAnim, rotateAnim, transXAnim, transYAnim);
+//                set.playSequentially(alphaAnim, scaleXAnim, scaleYAnim, rotateAnim, transXAnim, transYAnim);
+                set.setDuration(3000);
+                set.start();
+
+</code></pre> <p>可以看到这些动画可以同时播放，或者是按序播放。</p> <h3 id=_6>属性动画核心原理</h3> <p>在上面实现属性动画的时候，我们反复的使用到了ObjectAnimator 这个类，这个类继承自ValueAnimator，使用这个类可以对任意对象的<strong>任意属性</strong>进行动画操作。而ValueAnimator是整个属性动画机制当中最核心的一个类；这点从下面的图片也可以看出。</p> <p><img alt src></p> <p>valueanimator.png</p> <p>属性动画核心原理，此图来自于Android SDK API 文档。</p> <blockquote> <p>属性动画的运行机制是通过不断地对值进行操作来实现的，而初始值和结束值之间的动画过渡就是由ValueAnimator这个类来负责计算的。它的内部使用一种时间循环的机制来计算值与值之间的动画过渡，我们只需要将初始值和结束值提供给ValueAnimator，并且告诉它动画所需运行的时长，那么ValueAnimator就会自动帮我们完成从初始值平滑地过渡到结束值这样的效果。除此之外，ValueAnimator还负责管理动画的播放次数、播放模式、以及对动画设置监听器等。</p> </blockquote> <p>从上图我们可以了解到，通过duration、startPropertyValue和endPropertyValue 等值，我们就可以定义动画运行时长，初始值和结束值。然后通过start方法开始动画。 </p> <p>那么ValueAnimator 到底是怎样实现从初始值平滑过渡到结束值的呢？这个就是由TypeEvaluator 和TimeInterpolator 共同决定的。</p> <p>具体来说，<strong>TypeEvaluator 决定了动画如何从初始值过渡到结束值。</strong> </p> <p><strong>TimeInterpolator 决定了动画从初始值过渡到结束值的节奏。</strong></p> <p>说的通俗一点，你每天早晨出门去公司上班，TypeEvaluator决定了你是坐公交、坐地铁还是骑车；而当你决定骑车后，TimeInterpolator决定了你一路上骑行的方式，你可以匀速的一路骑到公司，你也可以前半程骑得飞快，后半程骑得慢悠悠。</p> <p>如果，还是不理解，那么就看下面的代码吧。首先看一下下面的这两个gif动画，一个小球在屏幕上以 y=sin(x) 的数学函数轨迹运行，同时小球的颜色和半径也发生着变化，可以发现，两幅图动画变化的节奏也是不一样的。</p> <p><img alt src></p> <p>anim1.gif</p> <p><img alt src></p> <p>anim2.gif</p> <p><em>如果不考虑属性动画，这样的一个动画纯粹的使用Canvas+Handler的方式绘制也是有可能实现的。但是会复杂很多，而且加上各种线程，会带来很多意想不到的问题。</em></p> <p>这里就通过自定义属性动画的方式看看这个动画是如何实现的。</p> <h3 id=_7>属性动画自定义实现</h3> <p>这个动画最关键的三点就是 运动轨迹、小球半径及颜色的变化；我们就从这三个方面展开。最后我们在结合Interpolator说一下TimeInterpolator的意义。</p> <h5 id=typeevaluator>用TypeEvaluator 确定运动轨迹</h5> <p>前面说了，TypeEvaluator决定了动画如何从初始值过渡到结束值。这个TypeEvaluator是个接口，我们可以实现这个接口。</p> <pre><code>public class PointSinEvaluator implements TypeEvaluator {
+
+    @Override
+    public Object evaluate(float fraction, Object startValue, Object endValue) {
+        Point startPoint = (Point) startValue;
+        Point endPoint = (Point) endValue;
+        float x = startPoint.getX() + fraction * (endPoint.getX() - startPoint.getX());
+
+        float y = (float) (Math.sin(x * Math.PI / 180) * 100) + endPoint.getY() / 2;
+        Point point = new Point(x, y);
+        return point;
+    }
+}
+
+</code></pre> <p>PointSinEvaluator 继承了TypeEvaluator类，并实现了他唯一的方法evaluate；这个方法有三个参数，第一个参数fraction 代表当前动画完成的<strong>百分比</strong>，这个值是如何变化的后面还会提到；第二个和第三个参数代表动画的<strong>初始值和结束值</strong>。这里我们的逻辑很简单，x的值随着fraction 不断变化，并最终达到结束值；y的值就是当前x值所对应的sin(x) 值，然后用x 和 y 产生一个新的点（Point对象）返回。</p> <p>这样我们就可以使用这个PointSinEvaluator 生成属性动画的实例了。</p> <pre><code>        Point startP = new Point(RADIUS, RADIUS);//初始值（起点）
+        Point endP = new Point(getWidth() - RADIUS, getHeight() - RADIUS);//结束值（终点）
+        final ValueAnimator valueAnimator = ValueAnimator.ofObject(new PointSinEvaluator(), startP, endP);
+        valueAnimator.setRepeatCount(-1);
+        valueAnimator.setRepeatMode(ValueAnimator.REVERSE);
+        valueAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+            @Override
+            public void onAnimationUpdate(ValueAnimator animation) {
+                currentPoint = (Point) animation.getAnimatedValue();
+                postInvalidate();
+            }
+        });
+
+</code></pre> <p>这样我们就完成了动画轨迹的定义，现在只要调用valueAnimator.start() 方法，就会绘制出一个正弦曲线的轨迹。</p> <h5 id=_8>颜色及半径动画实现</h5> <p>之前我们说过，使用ObjectAnimator 可以对任意对象的任意属性进行动画操作，这句话是不太严谨的，这个任意属性还需要有get 和 set 方法。</p> <pre><code>public class PointAnimView extends View {
+
+    /**
+     * 实现关于color 的属性动画
+     */
+    private int color;
+    private float radius = RADIUS;
+
+    .....
+
+}
+
+</code></pre> <p>这里在我们的自定义view中，定义了两个属性color 和 radius，并实现了他们各自的get set 方法，这样我们就可以使用属性动画的特点实现小球颜色变化的动画和半径变化的动画。</p> <pre><code>        ObjectAnimator animColor = ObjectAnimator.ofObject(this, &quot;color&quot;, new ArgbEvaluator(), Color.GREEN,
+                Color.YELLOW, Color.BLUE, Color.WHITE, Color.RED);
+        animColor.setRepeatCount(-1);
+        animColor.setRepeatMode(ValueAnimator.REVERSE);
+
+
+        ValueAnimator animScale = ValueAnimator.ofFloat(20f, 80f, 60f, 10f, 35f,55f,10f);
+        animScale.setRepeatCount(-1);
+        animScale.setRepeatMode(ValueAnimator.REVERSE);
+        animScale.setDuration(5000);
+        animScale.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+            @Override
+            public void onAnimationUpdate(ValueAnimator animation) {
+                radius = (float) animation.getAnimatedValue();
+            }
+        });
+
+
+</code></pre> <p>这里，我们使用ObjectAnimator 实现对color 属性的值按照ArgbEvaluator 这个类的规律在给定的颜色值之间变化，这个ArgbEvaluator 和我们之前定义的PointSinEvaluator一样，都是决定动画如何从初始值过渡到结束值的，只不过这个类是系统自带的，我们直接拿来用就可以，他可以实现各种颜色间的自由过渡。</p> <p>对radius 这个属性使用了ValueAnimator，使用了其ofFloat方法实现了一系列float值的变化；同时为其添加了动画变化的监听器，在属性值更新的过程中，我们可以将变化的结果赋给radius，这样就实现了半径动态的变化。</p> <p><strong>这里radius 也可以使用和color相同的方式，只需要把ArgbEvaluator 替换为FloatEvaluator，同时修改动画的变化值即可；使用添加监听器的方式，只是为了介绍监听器的使用方法而已</strong></p> <p>好了，到这里我们已经定义出了所有需要的动画，前面说过，属性动画也是可以组合使用的。因此，在动画启动的时候，同时播放这三个动画，就可以实现图中的效果了。</p> <pre><code>        animSet = new AnimatorSet();
+        animSet.play(valueAnimator).with(animColor).with(animScale);
+        animSet.setDuration(5000);
+        animSet.setInterpolator(interpolatorType);
+        animSet.start();
+
+</code></pre> <p>PointAnimView 源码</p> <pre><code>public class PointAnimView extends View {
+
+    public static final float RADIUS = 20f;
+
+    private Point currentPoint;
+
+    private Paint mPaint;
+    private Paint linePaint;
+
+    private AnimatorSet animSet;
+    private TimeInterpolator interpolatorType = new LinearInterpolator();
+
+    /**
+     * 实现关于color 的属性动画
+     */
+    private int color;
+    private float radius = RADIUS;
+
+    public PointAnimView(Context context) {
+        super(context);
+        init();
+    }
+
+
+    public PointAnimView(Context context, AttributeSet attrs) {
+        super(context, attrs);
+        init();
+    }
+
+    public PointAnimView(Context context, AttributeSet attrs, int defStyleAttr) {
+        super(context, attrs, defStyleAttr);
+        init();
+    }
+
+
+    public int getColor() {
+        return color;
+    }
+
+    public void setColor(int color) {
+        this.color = color;
+        mPaint.setColor(this.color);
+    }
+
+    public float getRadius() {
+        return radius;
+    }
+
+    public void setRadius(float radius) {
+        this.radius = radius;
+    }
+
+    private void init() {
+        mPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+        mPaint.setColor(Color.TRANSPARENT);
+
+        linePaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+        linePaint.setColor(Color.BLACK);
+        linePaint.setStrokeWidth(5);
+    }
+
+    @Override
+    protected void onDraw(Canvas canvas) {
+        if (currentPoint == null) {
+            currentPoint = new Point(RADIUS, RADIUS);
+            drawCircle(canvas);
+//            StartAnimation();
+        } else {
+            drawCircle(canvas);
+        }
+
+        drawLine(canvas);
+    }
+
+    private void drawLine(Canvas canvas) {
+        canvas.drawLine(10, getHeight() / 2, getWidth(), getHeight() / 2, linePaint);
+        canvas.drawLine(10, getHeight() / 2 - 150, 10, getHeight() / 2 + 150, linePaint);
+        canvas.drawPoint(currentPoint.getX(), currentPoint.getY(), linePaint);
+
+    }
+
+    public void StartAnimation() {
+        Point startP = new Point(RADIUS, RADIUS);
+        Point endP = new Point(getWidth() - RADIUS, getHeight() - RADIUS);
+        final ValueAnimator valueAnimator = ValueAnimator.ofObject(new PointSinEvaluator(), startP, endP);
+        valueAnimator.setRepeatCount(-1);
+        valueAnimator.setRepeatMode(ValueAnimator.REVERSE);
+        valueAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+            @Override
+            public void onAnimationUpdate(ValueAnimator animation) {
+                currentPoint = (Point) animation.getAnimatedValue();
+                postInvalidate();
+            }
+        });
+
+//
+        ObjectAnimator animColor = ObjectAnimator.ofObject(this, &quot;color&quot;, new ArgbEvaluator(), Color.GREEN,
+                Color.YELLOW, Color.BLUE, Color.WHITE, Color.RED);
+        animColor.setRepeatCount(-1);
+        animColor.setRepeatMode(ValueAnimator.REVERSE);
+
+
+        ValueAnimator animScale = ValueAnimator.ofFloat(20f, 80f, 60f, 10f, 35f,55f,10f);
+        animScale.setRepeatCount(-1);
+        animScale.setRepeatMode(ValueAnimator.REVERSE);
+        animScale.setDuration(5000);
+        animScale.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+            @Override
+            public void onAnimationUpdate(ValueAnimator animation) {
+                radius = (float) animation.getAnimatedValue();
+            }
+        });
+
+
+        animSet = new AnimatorSet();
+        animSet.play(valueAnimator).with(animColor).with(animScale);
+        animSet.setDuration(5000);
+        animSet.setInterpolator(interpolatorType);
+        animSet.start();
+
+    }
+
+    private void drawCircle(Canvas canvas) {
+        float x = currentPoint.getX();
+        float y = currentPoint.getY();
+        canvas.drawCircle(x, y, radius, mPaint);
+    }
+
+
+    public void setInterpolatorType(int type ) {
+        switch (type) {
+            case 1:
+                interpolatorType = new BounceInterpolator();
+                break;
+            case 2:
+                interpolatorType = new AccelerateDecelerateInterpolator();
+                break;
+            case 3:
+                interpolatorType = new DecelerateInterpolator();
+                break;
+            case 4:
+                interpolatorType = new AnticipateInterpolator();
+                break;
+            case 5:
+                interpolatorType = new LinearInterpolator();
+                break;
+            case 6:
+                interpolatorType=new LinearOutSlowInInterpolator();
+                break;
+            case 7:
+                interpolatorType = new OvershootInterpolator();
+            default:
+                interpolatorType = new LinearInterpolator();
+                break;
+        }
+    }
+
+
+    @TargetApi(Build.VERSION_CODES.KITKAT)
+    public void pauseAnimation() {
+        if (animSet != null) {
+            animSet.pause();
+        }
+    }
+
+
+    public void stopAnimation() {
+        if (animSet != null) {
+            animSet.cancel();
+            this.clearAnimation();
+        }
+    }
+}
+
+</code></pre> <h4 id=timeinterpolator>TimeInterpolator 介绍</h4> <p>Interpolator的概念其实我们并不陌生，在补间动画中我们就使用到了。他就是用来控制动画快慢节奏的；而在属性动画中，TimeInterpolator 也是类似的作用；TimeInterpolator 继承自Interpolator。我们可以继承TimerInterpolator 以自己的方式控制动画变化的节奏，也可以使用Android 系统提供的Interpolator。</p> <p>下面都是系统帮我们定义好的一些Interpolator，我们可以通过setInterpolator 设置不同的Interpolator。</p> <p><img alt src></p> <p>系统自带Interpolator</p> <p>这里我们使用的Interpolator就决定了 前面我们提到的fraction。变化的节奏决定了动画所执行的百分比。不得不说，这么ValueAnimator的设计的确是很巧妙。</p> <h4 id=xml_1>XML 属性动画</h4> <p>这里提一下，属性动画当然也可以使用xml文件的方式实现，但是属性动画的属性值一般会牵扯到对象具体的属性，更多是通过代码动态获取，所以xml文件的实现会有些不方便。</p> <pre><code>&lt;set android:ordering=&quot;sequentially&quot;&gt;
+    &lt;set&gt;
+        &lt;objectAnimator
+            android:propertyName=&quot;x&quot;
+            android:duration=&quot;500&quot;
+            android:valueTo=&quot;400&quot;
+            android:valueType=&quot;intType&quot;/&gt;
+        &lt;objectAnimator
+            android:propertyName=&quot;y&quot;
+            android:duration=&quot;500&quot;
+            android:valueTo=&quot;300&quot;
+            android:valueType=&quot;intType&quot;/&gt;
+    &lt;/set&gt;
+    &lt;objectAnimator
+        android:propertyName=&quot;alpha&quot;
+        android:duration=&quot;500&quot;
+        android:valueTo=&quot;1f&quot;/&gt;
+&lt;/set&gt;
+
+</code></pre> <p>使用方式：</p> <pre><code>AnimatorSet set = (AnimatorSet) AnimatorInflater.loadAnimator(myContext,
+    R.anim.property_animator);
+set.setTarget(myObject);
+set.start();
+
+</code></pre> <p>xml 文件中的标签也和属性动画的类相对应。</p> <pre><code> ValueAnimator --- &lt;animator&gt; 
+ ObjectAnimator --- &lt;objectAnimator&gt; 
+ AnimatorSet --- &lt;set&gt; 
+
+</code></pre> <p>这些就是属性动画的核心内容。现在使用属性动画的特性自定义动画应该不是难事了。其余标签的含义，结合之前的内容应该不难理解了。</p> <h2 id=vs>传统动画 VS 属性动画</h2> <p>相较于传统动画，属性动画有很多优势。那是否意味着属性动画可以完全替代传统动画呢。其实不然，两种动画都有各自的优势，属性动画如此强大，也不是没有缺点。</p> <p><img alt src></p> <p>补间动画点击事件</p> <p><img alt src></p> <p>属性动画点击事件</p> <ul> <li>从上面两幅图比较可以发现，补间动画中，虽然使用translate将图片移动了，但是点击原来的位置，依旧可以发生点击事件，而属性动画却不是。因此我们可以确定，属性动画才是真正的实现了view的移动，补间动画对view的移动更像是在不同地方绘制了一个影子，实际的对象还是处于原来的地方。</li> <li>当我们把动画的repeatCount设置为无限循环时，如果在Activity退出时没有及时将动画停止，属性动画会导致Activity无法释放而导致内存泄漏，而补间动画却没有问题。因此，使用属性动画时切记在Activity执行 onStop 方法时顺便将动画停止。（对这个怀疑的同学可以自己通过在动画的Update 回调方法打印日志的方式进行验证）。</li> <li>xml 文件实现的补间动画，复用率极高。在Activity切换，窗口弹出时等情景中有着很好的效果。</li> <li>使用帧动画时需要注意，不要使用过多特别大的图，容易导致内存不足。</li> </ul> <p>好了，关于Android 动画的总结就到这里。</p> <p>最后 有兴趣的同学可查看<a href=https://github.com/REBOOTERS/AndroidAnimationExercise>github 源码</a>欢迎star &amp; fork</p> <hr> <p>原文链接： <a href=https://www.jianshu.com/p/420629118c10>https://www.jianshu.com/p/420629118c10</a></p> </article> </div> </div> </main> <footer class=md-footer> <nav class="md-footer__inner md-grid" aria-label=页脚> <a href=../%E9%BB%91%E5%AE%A2%E5%8F%AF%E4%BB%A5%E5%88%A9%E7%94%A8%E4%B8%89%E6%98%9F%E9%A2%84%E8%A3%85%E7%9A%84%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E6%9D%A5%E7%9B%91%E8%A7%86%E7%94%A8%E6%88%B7/ class="md-footer__link md-footer__link--prev" aria-label="上一页: 黑客可以利用三星预装的应用程序来监视用户" rel=prev> <div class="md-footer__button md-icon"> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg> </div> <div class=md-footer__title> <div class=md-ellipsis> <span class=md-footer__direction> 上一页 </span> 黑客可以利用三星预装的应用程序来监视用户 </div> </div> </a> <a href=../Android%E7%AD%BE%E5%90%8D%E6%80%BB%E7%BB%93/ class="md-footer__link md-footer__link--next" aria-label="下一页: Android签名总结" rel=next> <div class=md-footer__title> <div class=md-ellipsis> <span class=md-footer__direction> 下一页 </span> Android签名总结 </div> </div> <div class="md-footer__button md-icon"> <svg xmlns=http://www.w3.org/2000/svg viewbox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg> </div> </a> </nav> <div class="md-footer-meta md-typeset"> <div class="md-footer-meta__inner md-grid"> <div class=md-copyright> <div class=md-copyright__highlight> Copyright &copy; 2022 - 3022 <span style=float:right><a href=http://beian.miit.gov.cn/ >鄂ICP备19027194号-2</a></span> </div> Made with <a href=https://squidfunk.github.io/mkdocs-material/ target=_blank rel=noopener> Material for MkDocs </a> </div> </div> </div> </footer> </div> <div class=md-dialog data-md-component=dialog> <div class="md-dialog__inner md-typeset"></div> </div> <script id=__config type=application/json>{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "search.suggest", "search.highlight", "search.share"], "translations": {"clipboard.copy": "\u590d\u5236", "clipboard.copied": "\u5df2\u590d\u5236", "search.config.lang": "ja", "search.config.pipeline": "trimmer, stemmer", "search.config.separator": "[\\uff0c\\u3002]+", "search.placeholder": "\u641c\u7d22", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.term.missing": "\u7f3a\u5c11", "select.version.title": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "search": "../../assets/javascripts/workers/search.bd0b6b67.min.js"}</script> <script src=../../assets/javascripts/bundle.8aa65030.min.js></script> </body> </html>
