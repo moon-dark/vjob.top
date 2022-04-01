@@ -1,0 +1,8 @@
+import subprocess
+
+print(subprocess.Popen('cat /flag ', shell=True))
+
+#f = open("/flag", "rb")
+#d = f.read()
+#f.close()
+#print(d)
